@@ -1,0 +1,357 @@
+body{
+    background: black;
+}
+.container{
+    position:relative;
+    width:800px;
+    height:600px;
+    background:#6b56c1;
+    margin:-120px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.gato{
+    width:30px;
+    height:30px;
+    background:black;
+    margin:0 auto;
+}
+.cabeca{
+    position:absolute;
+    margin:0 0;
+    animation:cabeca 3s alternate infinite;
+}
+
+.rosto{
+  position:absolute;
+  width:241px;
+  height:182px;
+  border-radius:90px ;
+  background-image: linear-gradient(to bottom, #f5ea1b 50%,
+   #eadcdd 100%);
+  margin:-90px -90px;
+  border-left:3px solid #f5ea1b;
+  transform:rotate(-9deg)
+}
+.orelhas,.orelhas1{
+    position:absolute;
+    width:152px;
+    height:121px;
+    background:#f5ea1b; 
+}
+.orelhas{
+    border-radius:500px 50px 500px 50px;
+    border-bottom:9px solid #e4c306;
+    transform: rotate(121deg); 
+    margin:-95px -109px;
+}
+.orelhas1{
+    border-radius:50px 500px 50px 500px;
+    background:#e4c306; 
+    transform: rotate(50deg); 
+    margin:-102px -3px
+}
+.orelhas1::before{
+    content:"";
+    position:absolute;
+    width:112px;
+    height:90px;
+    border-radius:50px 500px 50px 500px;
+    background:#f5ea1b; 
+    transform: rotate(-9deg); 
+    margin:-9px 9px
+}
+.olhos{
+    position:absolute;
+    width:116px;
+    height:112px;
+    border-radius:100%;
+    border-top:12px solid black;
+    margin:30px 12px
+}
+.olhos-direitos{
+    position:absolute;
+    width:90px;
+    height:112px;
+    border-radius:100%;
+    border-top:12px solid black;
+    margin:30px 135px
+}
+.olhos::before, .olhos-direitos::before{
+    content:"";
+    position:absolute;
+    border-radius:100%;
+    background-image: linear-gradient(to top, #93cf9e 0%,
+     #eee 50%);
+    border-bottom:3px solid #c5a61f;
+    border-left:3px solid #c5a61f;
+    border-right:3px solid #c5a61f;
+}
+.olhos::before{
+        width:112px;
+        height:112px;
+        margin:-3px 0px;
+}
+.olhos-direitos::before{
+        width:90px;
+        height:112px;
+        margin:-3px 0px
+}
+.iris{
+        position:absolute;
+        width:93px;
+        height:93px;
+        border-radius:100%;
+       background:#5d2163 ;
+        margin:7px 12px;
+}
+.iris::before{
+        content:"";
+        position:absolute;
+        width:73px;
+        height:73px;
+        border-radius:100%;
+        background:#3F0F44;
+        box-shadow:0px 5px 21px #ce7cd5;
+        margin:9px 9px;
+    }
+    .iris2{
+        position:absolute;
+        width:21px;
+        height:23px;
+        border-radius:100%;
+        background:white;
+        transform:rotate(35deg);
+        margin:9px 25px;
+        animation:brilha .9s alternate infinite;
+    }
+    .iris2::before{
+        content:"";
+        position:absolute;
+        width:9px;
+        height:9px;
+        border-radius:100%;
+        background:white;
+        margin:30px 9px;
+    }
+    .iris1{
+        position:absolute;
+        width:85px;
+        height:93px;
+        border-radius:100%;
+        background:#3c1f3e ;
+        margin:7px 0px;
+    }
+    .iris1::before{
+        content:"";
+        position:absolute;
+        width:73px;
+        height:73px;
+        border-radius:100%;
+        background:#3F0F44;
+        box-shadow:0px 5px 21px #f04fff;
+        margin:9px 0px;
+    }
+    .boca{
+        position:relative;
+        width: 16px;
+        height: 12px;
+        border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+        background:#c1209c;
+        margin: 127px 123px;
+    }
+    .boca::before{
+        content:"Y";
+        position:absolute;
+        font-family:verdana;
+        font-size:2.1em    ;
+        margin:3px -3px;
+        transform:rotate(180deg)
+    }
+    .sobrancelhas{
+        position:absolute;
+        width:25px;
+        height:12px;
+        border-radius:100%;
+        background:black;
+        margin:5px 60px;
+        transform:rotate(-30deg)
+    }
+    .sobrancelhas::before{
+        content:"";
+        position:absolute;
+        width:25px;
+        height:12px;
+        border-radius:100%;
+        background:black;
+        margin:45px 80px;
+        transform:rotate(60deg)
+    }
+    .cilhos-esquerdos,.cilhos-direitos{
+        position:absolute;
+        width:21px;
+        height:21px;
+        border-radius:100%;
+        
+    }
+    .cilhos-esquerdos{
+        border-bottom:5px solid black;
+        margin:60px 0px;
+    }
+    .cilhos-direitos{
+        border-bottom:5px solid black;
+        margin:60px 219px;
+    }
+    .cilhos-esquerdos::before,
+    .cilhos-direitos::before{
+      content:"";
+      position:absolute;
+      width:21px;
+      height:21px;
+      border-radius:100%;
+      border-bottom:5px solid black;
+    }
+    .cilhos-esquerdos::before{
+        margin:9px -3px;
+        transform:rotate(-30deg)
+    }
+    .cilhos-direitos::before{
+        margin:9px 0px;
+        transform:rotate(21deg)
+    }
+    .bigodes,.bigodes-direito{
+        position:absolute;
+        width:35px;
+        height:12px;
+        border-radius:100%;
+        border-top:5px solid black;
+    }
+    .bigodes{
+        margin:-112px 5px;
+        transform:rotate(-21deg)
+    }
+    .bigodes-direito{
+        margin:-112px 201px;
+        transform:rotate(9deg)
+    }
+    .bigodes::before,.bigodes-direito::before{
+        content:"";
+        position:absolute;
+         width:35px;
+        height:12px;
+        border-radius:100%;
+        border-top:5px solid black;
+    }
+    .bigodes::before{
+        margin:7px 5px;
+    }
+    .bigodes-direito::before{
+        margin:7px -9px;
+    }
+    .corpo1{
+        position:absolute;
+        width:152px;
+        height:90px;
+        border-radius:900px 90px 700px 30px;
+        background:#c2b0b1
+        transform: rotate(152deg); 
+        margin:60px -50px;
+    }
+    .corpo2{
+        position:absolute;
+        width:90px;
+        height:90px;
+        border-radius:100%;
+        background:#c2b0b1;
+        margin:80px -12px
+    }
+    .corpo3{
+        position:absolute;
+        width:65px;
+        height:102px;
+        border-radius:100%;
+        background:#e4b313e9; 
+        margin:77px -50px
+    }
+    .pernas,.pernas1{
+        position:absolute;
+        width: 90px;
+        height: 150px;
+        border-top: 40px solid #e5cb3b;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-radius: 100px / 100px;
+    }
+    .pernas{
+        transform: rotate(85deg);
+        margin:30px -70px
+    }
+    .pernas1{
+        transform: rotate(-85deg);
+        margin:30px -12px;
+    }
+    .pernas::before, .pernas1::before{
+        content:"";
+        position:absolute;
+        width:33px;
+        height:50px;
+        border-radius: 100%;
+        background:#e4c306;
+    }
+    .pernas::before{
+        margin:-21px 77px
+    }
+    .pernas1::before{
+        margin:-21px -19px
+    }
+    .rabo{
+        position:absolute;
+        width:121px;
+        height:30px;
+        border-radius:100%;
+        background:#f4d732;
+        margin:121px -102px;
+        animation:rabo 3s alternate infinite;
+    }
+    .rabo1{
+        position:absolute;
+        width:35px;
+        height:35px;
+        border-radius:100%;
+         background:#e4c306; 
+        border-right:1px solid gray;
+        margin:121px -112px;
+        animation:rabo1 3s alternate infinite;
+    }
+    @keyframes brilha{
+        0%{
+        transform:scale(1) rotate(35deg);
+        }
+        50%{
+        transform:scale(.90) rotate(35deg); 
+        }
+    }
+    @keyframes rabo {
+        0%{
+           transform:translatex(0px) translatey(15px) 
+       }
+      100% {
+       transform:translatex(-10px) translatey(-15px) 
+   }
+   }
+   @keyframes rabo1 {
+    0%{
+       transform:translatex(0px) translatey(0px) scale(1)
+   }
+  100% {
+   transform:translatex(-12px) translatey(-3px) scale(.95)
+  }
+  }
+  @keyframes cabeca{
+    0%{
+        transform:rotate(5deg)
+    }
+    100%{transform:rotate(-5deg)
+    }
+}
